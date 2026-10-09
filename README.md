@@ -2,6 +2,45 @@
 
 A data analytics project focused on understanding manufacturing energy consumption, identifying operational inefficiencies, forecasting future energy demand, and evaluating opportunities to reduce energy use and carbon emissions.
 
+## 🏗️ Project Architecture
+
+The project follows a modular analytics pipeline that transforms manufacturing data into actionable energy and sustainability insights.
+
+```mermaid
+flowchart TD
+    A["Manufacturing Dataset<br/>10,000 synthetic records"] --> B["Data Cleaning & Validation"]
+    B --> C["Exploratory Data Analysis"]
+    C --> D["Energy Baseline Development"]
+    D --> E["Inefficiency Analysis"]
+    E --> F["Energy Forecasting"]
+    E --> G["What-If Scenario Analysis"]
+    D --> H["CO₂ Emissions Analysis"]
+    G --> I["Energy Optimization"]
+    H --> I
+    F --> J["Analytical Outputs"]
+    G --> J
+    H --> J
+    I --> J
+    J --> K["Power BI Dashboard<br/>Interactive Reporting"]
+    J --> L["Recommendations<br/>Decision Support"]
+```
+
+### Analytics Modules
+
+| Module | Purpose |
+|---|---|
+| Data Cleaning | Handle missing values and validate data |
+| EDA | Explore energy, production, and machine patterns |
+| Baseline | Establish reference energy consumption |
+| Inefficiency Analysis | Identify potential energy inefficiencies |
+| Forecasting | Forecast future energy demand |
+| What-If Analysis | Evaluate hypothetical energy-saving scenarios |
+| CO₂ Analysis | Estimate carbon emissions |
+| Optimization | Evaluate potential energy reduction opportunities |
+| Recommendations | Translate findings into actionable suggestions |
+
+*Note: The diagram represents the intended analytical workflow. The exact execution order and dependencies may differ between individual scripts.*
+
 ## Project Overview
 
 Manufacturing operations consume energy across different machines, operating states, and production schedules. Understanding these patterns can help organizations identify inefficiencies and make better operational decisions.
@@ -158,14 +197,10 @@ Sustainable_Manufacturing_Analytics_ID_Pass/
 
 ## Getting Started
 
-### 1. Clone the repository
-
 ```bash
-git clone https://github.com/YOUR_USERNAME/Sustainable-Manufacturing-Analytics.git
+git clone https://github.com/mahtab4builds/Sustainable-Manufacturing-Analytics.git
 cd Sustainable-Manufacturing-Analytics
 ```
-
-Replace `YOUR_USERNAME` with the GitHub username that owns the repository.
 
 ### 2. Create a virtual environment
 
