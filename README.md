@@ -56,6 +56,28 @@ The dataset includes information about timestamps, machine states, energy consum
 
 The dataset is provided in the `data/` directory.
 
+## 📊 Power BI Dashboard Preview
+
+The Power BI dashboard presents an interactive view of manufacturing energy consumption, machine efficiency, production operations, forecasting scenarios, and carbon footprint optimization.
+
+### 1. Overview
+![Overview Dashboard](docs/images/overview.png)
+
+### 2. Energy Performance
+![Energy Performance Dashboard](docs/images/energy-performance.png)
+
+### 3. Machine Efficiency
+![Machine Efficiency Dashboard](docs/images/machine-efficiency.png)
+
+### 4. Operations
+![Operations Dashboard](docs/images/operations.png)
+
+### 5. Forecast & What-If Analysis
+![Forecast and What-If Dashboard](docs/images/forecast-what-if.png)
+
+### 6. CO₂ & Optimization
+![CO2 and Optimization Dashboard](docs/images/co2-optimization.png)
+
 ## Key Results
 
 The following figures are from the project's analytical runs:
