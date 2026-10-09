@@ -1,0 +1,181 @@
+# Sustainable Manufacturing: Energy Consumption & Carbon Footprint Optimization Analytics
+
+A data analytics project focused on understanding manufacturing energy consumption, identifying operational inefficiencies, forecasting future energy demand, and evaluating opportunities to reduce energy use and carbon emissions.
+
+## Project Overview
+
+Manufacturing operations consume energy across different machines, operating states, and production schedules. Understanding these patterns can help organizations identify inefficiencies and make better operational decisions.
+
+This project uses Python-based data analytics, forecasting, scenario analysis, optimization, and Power BI to explore energy performance and sustainability opportunities.
+
+**Important:** The project dataset is synthetic. The emission factor and savings estimates are for analytical demonstration and must not be interpreted as verified industrial measurements or achieved savings.
+
+## Objectives
+
+- Analyze manufacturing energy consumption and production.
+- Clean and validate the dataset.
+- Develop an energy baseline.
+- Identify potential energy inefficiencies.
+- Forecast future energy consumption.
+- Evaluate What-If improvement scenarios.
+- Analyze carbon dioxide equivalent (CO₂e) emissions.
+- Model energy optimization opportunities.
+- Generate actionable management recommendations.
+- Present findings through a Power BI dashboard.
+
+## Technologies Used
+
+- Python
+- Pandas and NumPy
+- Matplotlib
+- Scikit-learn
+- SciPy optimization
+- Flask for the mock API
+- Excel and CSV
+- Power BI
+- Git and GitHub
+
+## Analytics Workflow
+
+1. Exploratory Data Analysis (EDA)
+2. Data Cleaning and Validation
+3. Energy Baseline Development
+4. Inefficiency Analysis
+5. Energy Forecasting
+6. What-If Scenario Analysis
+7. CO₂e and Sustainability Analysis
+8. Linear Programming Optimization
+9. Management Recommendations
+10. Power BI Dashboard Reporting
+
+## Dataset
+
+The project uses a synthetic manufacturing energy dataset containing **10,000 records** and **31 original columns**, covering five machines.
+
+The dataset includes information about timestamps, machine states, energy consumption, production, baseline energy, environmental conditions, and emissions-related fields.
+
+The dataset is provided in the `data/` directory.
+
+## Key Results
+
+The following figures are from the project's analytical runs:
+
+| Metric | Result |
+|---|---:|
+| Dataset records | 10,000 |
+| Machines analyzed | 5 |
+| Total observed energy consumption | 349,856.35 kWh |
+| Total production | 52,491.21 units |
+| Total CO₂e | Approximately 244,899.45 kg |
+| Idle energy consumption | 22,120.85 kWh |
+| Forecast horizon | 14 days |
+| Modelled optimization energy reduction | Approximately 92,136.35 kWh |
+| Modelled optimization reduction | Approximately 26.34% |
+
+The project uses a **synthetic emission factor of 0.70 kg CO₂e/kWh** for demonstration.
+
+The optimization figures represent modelled potential under the project's assumptions, not measured or achieved savings. Forecasts are estimates and are not guarantees of future consumption.
+
+## Project Structure
+
+```text
+Sustainable_Manufacturing_Analytics_ID_Pass/
+├── data/
+│   └── Sustainable_Manufacturing_Energy_Analytics_10000.xlsx
+├── src/
+│   ├── library/
+│   ├── main.py
+│   ├── auth.py
+│   ├── eda.py
+│   ├── data_cleaning.py
+│   ├── baseline.py
+│   ├── inefficiency_analysis.py
+│   ├── forecasting.py
+│   ├── what_if_analysis.py
+│   ├── co2_analysis.py
+│   ├── optimization.py
+│   └── recommendations.py
+├── outputs/                 # Generated locally; excluded from Git
+├── .env.example
+├── .gitignore
+├── requirements.txt
+├── run_pipeline.py
+└── README.md
+```
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Sustainable-Manufacturing-Analytics.git
+cd Sustainable-Manufacturing-Analytics
+```
+
+Replace `YOUR_USERNAME` with the GitHub username that owns the repository.
+
+### 2. Create a virtual environment
+
+Windows PowerShell:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+### 3. Install dependencies
+
+```powershell
+pip install -r requirements.txt
+```
+
+### 4. Configure environment variables
+
+Create a local `.env` file based on `.env.example`. Set the configuration required by the application, including your own credentials.
+
+**Never commit `.env` or publish real passwords, API keys, or tokens.**
+
+### 5. Run the project
+
+Follow the entry point and configuration supported by the source code. The main pipeline launcher is `run_pipeline.py`; check its implementation and the project's configuration before running it.
+
+Generated analytical files are written to the configured output directories and are excluded from Git by default.
+
+## Power BI Dashboard
+
+The planned report is organized into six pages:
+
+1. Executive Overview
+2. Energy Performance
+3. Machine Efficiency
+4. Production & Operations
+5. Forecast & What-If
+6. CO₂ & Optimization
+
+Add dashboard screenshots and the Power BI report file if they are suitable for public sharing and do not contain confidential information.
+
+## Limitations
+
+- The dataset is synthetic and may not represent real manufacturing operations.
+- The emission factor is illustrative and should be replaced with an appropriate, documented factor for real-world reporting.
+- Forecast performance depends on the available data and validation methodology.
+- What-If and optimization outputs depend on model assumptions and constraints.
+- Potential savings require real-world measurement and validation before being claimed as achieved.
+
+## Future Improvements
+
+- Integrate a production data API.
+- Validate the analysis using real manufacturing data.
+- Improve forecasting and optimization methods.
+- Add automated reporting and monitoring.
+- Expand Power BI dashboard documentation.
+
+## Author
+
+**Mahtab Alam Ansari**
+
+BCA | Data Analytics Project
+
+---
+
+*Developed as a sustainable manufacturing analytics project using Python and Power BI.*
