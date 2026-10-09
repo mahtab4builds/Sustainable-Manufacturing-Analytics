@@ -78,6 +78,37 @@ The Power BI dashboard presents an interactive view of manufacturing energy cons
 ### 6. CO₂ & Optimization
 ![CO2 and Optimization Dashboard](docs/images/co2-optimization.png)
 
+## 📈 Key Findings & Results
+
+The analysis of 10,000 synthetic manufacturing records provides insights into energy consumption, production efficiency, and carbon emissions.
+
+### Key Performance Indicators (KPIs)
+
+| Metric | Result |
+|---|---:|
+| Total Energy Consumption | 349,856.35 kWh |
+| Total Production | 52,491.21 units |
+| Total CO₂e Emissions | 244,899.45 kg CO₂e |
+| Idle Energy Consumption | 22,120.85 kWh |
+| Idle CO₂e Emissions | 15,484.59 kg CO₂e |
+| Energy per Production Unit | 6.67 kWh/unit |
+| CO₂e per Production Unit | 4.67 kg CO₂e/unit |
+
+### Key Analytical Insights
+
+- **Energy performance:** Actual modelled energy consumption was 17,105.85 kWh above the established baseline.
+- **Idle energy:** Idle operations accounted for 22,120.85 kWh of energy consumption, identifying an opportunity to improve machine shutdown and scheduling practices.
+- **Machine sustainability:** The industrial compressor (M005) had the highest reported CO₂e per production unit, at approximately 13.19 kg CO₂e/unit.
+- **Energy forecasting:** The forecasting module generates a 14-day energy demand forecast to support production planning.
+- **What-If analysis:** Scenario modelling estimates potential energy and emissions reductions under configurable assumptions.
+- **Optimization:** The optimization module evaluates potential energy-saving opportunities subject to the model's assumptions and constraints.
+
+### Important Interpretation Note
+
+This project uses a synthetic dataset and a demonstration emission factor of 0.7 kg CO₂e/kWh. The results are analytical estimates based on the supplied data and modelling assumptions; they do not represent verified real-world factory performance or achieved savings.
+
+Potential savings from What-If analysis and optimization are modelled scenarios, not guaranteed reductions.
+
 ## Key Results
 
 The following figures are from the project's analytical runs:
