@@ -7,3 +7,4 @@ scikit-learn
 scipy
 openpyxl
 python-dotenv
+streamlit>=1.36,<2.0
